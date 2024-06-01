@@ -56,16 +56,10 @@ const book2 = new Books(
 
 const library = new Library("Books", [book1, book2]);
 
-// find a book by title
-
-// const powerMoves = library.findBookByTitle("Power Moves")
-
-//console.log powerMoves
-//console.log(book1,book2)
+console.log(book1, book2);
 //book1.borrowBook()
 //book2.returnBook()
 //library.addBook(book1)
 //library.removeBook(book2.isbn) // pass in an isbn of a book obj-works
 console.log(library);
-
-library.listAllBooks(Books);
+//library.listAllBooks(Books);
