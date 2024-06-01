@@ -31,12 +31,13 @@ function Library(name, books) {
     this.books.splice(this.books.indexOf(isbn), 2);
   };
 
-  this.findBookByTitle = function (title) {
-    return this.books.find((book1) => book1.title === title);
-  };
+  const findBookByTitle = [book1, book2];
+  findBookByTitle.forEach((book) => {
+    console.log(book.title);
+  });
 
   this.listAllBooks = function () {
-    return this.books.map((book) => book.title);
+    return this.books.map((book) => book.map);
   };
 }
 
@@ -57,16 +58,14 @@ const library = new Library("Books", [book1, book2]);
 
 // find a book by title
 
-//const powerMoves = library.findBookByTitle("Power Moves")
+// const powerMoves = library.findBookByTitle("Power Moves")
 
 //console.log powerMoves
-console.log(book1,book2)
-book1.borrowBook()
-book2.returnBook()
-library.addBook(book1)
-library.removeBook(book2.isbn) // pass in an isbn of a book obj-works
+//console.log(book1,book2)
+//book1.borrowBook()
+//book2.returnBook()
+//library.addBook(book1)
+//library.removeBook(book2.isbn) // pass in an isbn of a book obj-works
 console.log(library);
-library.findBookByTitle(book1)
 
-
-
+library.listAllBooks(Books);
